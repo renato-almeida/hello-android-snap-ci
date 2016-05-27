@@ -18,7 +18,11 @@ I've created a pipeline with several steps/stages:
 - UI Tests `./gradlew connectedAndroidTest`
   - Run automatic tests (currently not working because on an error, GLIBC_2.15 not found)
 
+Other steps that would be nice to create would be to upload to beta distribution (HockeyApp, Fabric) and the upload to PlayStore 
+
 ##TODO
 - Create a script to use on Setup stage
 - Add script to download selected build tools, platform and emulator versions, by getting them from the `build.gradle` file
  
+### Suggestions 
+If you have any improv to this setup, please tell :) 
