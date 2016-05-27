@@ -1,14 +1,23 @@
 package com.github.renato_almeida.helloandroidsnapci;
 
-import android.app.Application;
-import android.test.ApplicationTestCase;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 
-/**
- * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
- */
-public class ApplicationTest extends ApplicationTestCase<Application> {
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
+import android.test.suitebuilder.annotation.LargeTest;
 
-    public ApplicationTest() {
-        super(Application.class);
+@RunWith(AndroidJUnit4.class)
+@LargeTest
+public class ApplicationTest {
+
+    @Rule
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(
+            MainActivity.class);
+
+    @Test
+    public void buttonClickTest() {
+
     }
 }
