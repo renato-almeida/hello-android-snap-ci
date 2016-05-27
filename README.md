@@ -20,4 +20,5 @@ I've created a pipeline with several steps/stages:
 
 ##TODO
 - Create a script to use on Setup stage
-- Add script to download selected build tools, platform and emulator
+- Add script to download selected build tools, platform and emulator versions, by getting them from the `build.gradle` file
+ 
